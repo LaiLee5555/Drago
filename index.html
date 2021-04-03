@@ -1,165 +1,151 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-<style>
-* {
-  box-sizing: border-box;
-}
-
-body {
-  font-family: Arial;
-  padding: 10px;
-  background: #f1f1f1;
-}
-
-/* Header/Blog Title */
-.header {
-  padding: 30px;
-  text-align: center;
-  background: white;
-}
-
-.header h1 {
-  font-size: 50px;
-}
-
-/* Style the top navigation bar */
-.topnav {
-  overflow: hidden;
-  background-color: #333;
-}
-
-/* Style the topnav links */
-.topnav a {
-  float: left;
-  display: block;
-  color: #f2f2f2;
-  text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
-}
-
-/* Change color on hover */
-.topnav a:hover {
-  background-color: #ddd;
-  color: black;
-}
-
-/* Create two unequal columns that floats next to each other */
-/* Left column */
-.leftcolumn {   
-  float: left;
-  width: 75%;
-}
-
-/* Right column */
-.rightcolumn {
-  float: left;
-  width: 25%;
-  background-color: #f1f1f1;
-  padding-left: 20px;
-}
-
-/* Fake image */
-.fakeimg {
-  background-color: #aaa;
-  width: 100%;
-  padding: 20px;
-}
-
-/* Add a card effect for articles */
-.card {
-  background-color: white;
-  padding: 20px;
-  margin-top: 20px;
-}
-
-/* Clear floats after the columns */
-.row:after {
-  content: "";
-  display: table;
-  clear: both;
-}
-
-/* Footer */
-.footer {
-  padding: 20px;
-  text-align: center;
-  background: #ddd;
-  margin-top: 20px;
-}
-
-/* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
-@media screen and (max-width: 800px) {
-  .leftcolumn, .rightcolumn {   
-    width: 100%;
-    padding: 0;
-  }
-}
-
-/* Responsive layout - when the screen is less than 400px wide, make the navigation links stack on top of each other instead of next to each other */
-@media screen and (max-width: 400px) {
-  .topnav a {
-    float: none;
-    width: 100%;
-  }
-}
-</style>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style_index.css">
+    <title>index</title>
 </head>
 <body>
+    <!-- ສ່ວນຂອງເມນູ -->
+    <header>
+        <div class="container">
+            <div class="conNav">
+                <div class="logo">
+                    <h1 class="text_loga">Pottfolio</h1>
+                </div>
+                <ul class="Nav">
+                    <li><a href="index.html">ໜ້າຫຼັກ</a><div class="border-b"></div></li>
+                    <li><a href="#about">ກ່ຽວກັບຂ້ອຍ</a><div class="border-b"></div></li>
+                    <li><a href="#contact">ຕິດຕໍ່ຂ້ອຍ</a><div class="border-b"></div></li>
+                </ul>
+            </div>
+        </div>
+    </header>
 
-<div class="header">
-  <h1>My Website</h1>
-  <p>Resize the browser window to see the effect.</p>
-</div>
+    <!-- ສ່ວນຂອງເມນູ -->
 
-<div class="topnav">
-  <a href="#">Link</a>
-  <a href="#">Link</a>
-  <a href="#">Link</a>
-  <a href="#" style="float:right">Link</a>
-</div>
+    <section class="header_section">
+        <div class="container">
+            <div class="head_con">
+                <div class="head_title">
+                    <div class="avatar">
+                        <img class="image" src="https://scontent.fvte2-1.fna.fbcdn.net/v/t1.6435-9/131262936_1148010862268559_8940915044304404817_n.jpg?_nc_cat=105&ccb=1-3&_nc_sid=174925&_nc_ohc=gbvx0uLjDBAAX_e5Swv&_nc_ht=scontent.fvte2-1.fna&oh=86162939f2d2138e72dc743750cc8444&oe=608F0A25" alt="">
+                    </div>
+                    <div class="title_name">
+                        <h1>ໄຫຼລີ ລີກົ້ງສື</h1>
+                        <h1>Programer & Developer</h1>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
-<div class="row">
-  <div class="leftcolumn">
-    <div class="card">
-      <h2>TITLE HEADING</h2>
-      <h5>Title description, Dec 7, 2017</h5>
-      <div class="fakeimg" style="height:200px;">Image</div>
-      <p>Some text..</p>
-      <p>Sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
-    </div>
-    <div class="card">
-      <h2>TITLE HEADING</h2>
-      <h5>Title description, Sep 2, 2017</h5>
-      <div class="fakeimg" style="height:200px;">Image</div>
-      <p>Some text..</p>
-      <p>Sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
-    </div>
-  </div>
-  <div class="rightcolumn">
-    <div class="card">
-      <h2>About Me</h2>
-      <div class="fakeimg" style="height:100px;">Image</div>
-      <p>Some text about me in culpa qui officia deserunt mollit anim..</p>
-    </div>
-    <div class="card">
-      <h3>Popular Post</h3>
-      <div class="fakeimg"><p>Image</p></div>
-      <div class="fakeimg"><p>Image</p></div>
-      <div class="fakeimg"><p>Image</p></div>
-    </div>
-    <div class="card">
-      <h3>Follow Me</h3>
-      <p>Some text..</p>
-    </div>
-  </div>
-</div>
 
-<div class="footer">
-  <h2>Footer</h2>
-</div>
+    <section class="skill">
+        <div class="container">
+            <div class="skill_container">
+                <h1 class="text_title">My skill</h1>
+                <div class="main_skill">
+                    <div class="skill_detail">
+                        <p>In the mean time shall soon find out the cause of this: What was the epicurus towards their children; each of these can have a chain of not to have been taken in the broad plain in what is the reason why</p>
+                    </div>
+                    <div class="chard">
+                        <div class="chard_item">
+                            <div class="chard_title"><h1>c++ and c</h1><h1>90%</h1></div>
+                            <div class="pipe1"></div>
+                        </div>
+                        <div class="chard_item">
+                            <div class="chard_title"><h1>OOP</h1><h1>70%</h1></div>
+                            <div class="pipe2"></div>
+                        </div>
+                        <div class="chard_item">
+                            <div class="chard_title"><h1>Data Structure & Algorithm</h1><h1>70%</h1></div>
+                            <div class="pipe3"></div>
+                        </div>
+                        <div class="chard_item">
+                            <div class="chard_title"><h1>Web Application</h1><h1>90%</h1></div>
+                            <div class="pipe4"></div>
+                        </div>
+                        <div class="chard_item">
+                            <div class="chard_title"><h1>python</h1><h1>50%</h1></div>
+                            <div class="pipe5"></div>
+                        </div>
+                        <div class="chard_item">
+                            <div class="chard_title"><h1>javascript</h1><h1>70%</h1></div>
+                            <div class="pipe6"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
+    <section class="experience">
+        <div class="container">
+            <div class="exper_container">
+                <h1 class="title_Interesting">Interesting</h1>
+                <div class="Interesting" style="border: solid rgb(255, 255, 255);border-radius: 30px; padding: 0 40px;">
+                    <div class="item_int">
+                        <div class="img-con"><img class="image_con" src="./AI 600 x 400.jpg" alt=""></div>
+                        <h1 class="title_int">AI</h1>
+                    </div>
+                    <div class="item_int">
+                        <div class="img-con"><img class="image_con" src="./bitcoit.jpg" alt=""></div>
+                        <h1 class="title_int">Cyptocurrency</h1>
+                    </div>
+                    <div class="item_int">
+                        <div class="img-con"><img class="image_con" src="./Ping_Pong.jpg" alt=""></div>
+                        <h1 class="title_int">pingpong</h1>
+                    </div>
+                    <div class="item_int">
+                        <div class="img-con"><img class="image_con" src="./nigerian-traveling-abroad.jpg" alt=""></div>
+                        <h1 class="title_int">Tavel</h1>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <section class="about" id="about">
+        <div class="container">
+            <div class="aboutCon">
+                <div class="about_item">
+                    <div class="title_table">ຊື່</div>
+                    <div class="title_table">ເພດ</div>
+                    <div class="title_table">ວັນເກີດ</div>
+                   <div class="title_table">ອາຍຸ</div>
+                   <div class="title_table">ສະຖານະ</div>
+                </div>
+                <div class="about_item">
+                   <div class="title_table">ໄຫຼລີ ລີກົ້ງສື</div>
+                   <div class="title_table">ຊາຍ</div>
+                   <div class="title_table">8/ 11 / 2002</div>
+                   <div class="title_table">18</div>
+                   <div class="title_table">ໂສດ</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer id="contact">
+        <div class="container">
+            <div class="footCon">
+               <div class="foot_item">
+                   <h1 class="title_foot">ເບີໂທ: 020 92858995</h1>
+                  <h1 class="title_foot">ອີເມລ: lailee165@gmail.com</h1>
+               </div>
+               <div class="foot_item">
+                   <h1 class="title_foot">ບ່ອນຢູ່ : ໃນໃຈເຈົ້າ</h1>
+               </div>
+               <div class="foot_item">
+                   <h1 class="title_foot">Facebook : Lai Lee</h1>
+                  <h1 class="title_foot">whatapp :020 92858995 </h1>
+               </div>
+            </div>
+        </div>
+    </footer>
+    
 </body>
 </html>
-
